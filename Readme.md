@@ -10,7 +10,11 @@ This was written by Marc Adler. This code can be used freely for your own person
 SQLGenerateInsertStatements [-help] [-tables <tablenames>] [-database <databasename>] [-connectionstring <connstring>] [-output <outputfile>] [-deleteall] [-append] [-noidentity]");
 ```
 
+The `-database` command line argument is required.
+
 The default output file is `GeneratedStatements.sql`.
+
+The default `connectionstring` is `Data Source=(local);Initial Catalog={d};Integrated Security=True`.
 
 If the `connectionstring` has '{db}' embedded in it, the '{d}' is replaced with the database name.
 
